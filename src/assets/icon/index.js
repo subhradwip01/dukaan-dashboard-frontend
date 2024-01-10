@@ -2,7 +2,7 @@ import analyticsIcon from "./analytics.svg";
 import arrowIcon from "./arrow.svg";
 import barchartIcon from "./barchart.svg";
 import boardIcon from "./board.svg";
-import cashIcon from "./discount.svg";
+import cashIcon from "./cash.svg";
 import discountIcon from "./discount.svg";
 import gridIcon from "./grid.svg";
 import homeIcon from "./home.svg";
