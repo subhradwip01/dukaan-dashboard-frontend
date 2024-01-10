@@ -4,7 +4,7 @@ import Input from '../UI/Input'
 
 const Topbar = () => {
   return (
-    <div className="w-full px-8 py-3 flex justify-between">
+    <div className="w-full px-8 py-3 flex justify-between border-b border-black-85">
       <div className='flex gap-4 items-center'>
         <p className="text-[15px] text-black-12">Payments</p>
         <div className='flex gap-1.5 items-center'>
