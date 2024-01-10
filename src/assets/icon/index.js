@@ -17,8 +17,14 @@ import questionIcon from "./quesion.svg";
 import searchIcon from "./search.svg";
 import arrowFillIcon from "./arrowfill.svg";
 import messageIcon from "./message.svg";
-import arrow2dark from "./arrow2dark.svg"
-
+import arrow2dark from "./arrow2dark.svg";
+import search2Icon from "./search2.svg";
+import sortIcon from "./sort.svg";
+import downloadIcon from "./download.svg";
+import arrowfill2Icon from "./arrowfill2.svg"
+import exclaimationIcon from "./exclaimation.svg"
+import rightArrowIcon from "./rightArrow.svg";
+import leftArrowIcon from "./leftArrow.svg"
 export {
     analyticsIcon,
     arrowIcon,
@@ -39,5 +45,12 @@ export {
     searchIcon,
     messageIcon,
     arrowFillIcon,
-    arrow2dark
+    arrow2dark,
+    search2Icon,
+    sortIcon,
+    downloadIcon,
+    arrowfill2Icon,
+    exclaimationIcon,
+    leftArrowIcon,
+    rightArrowIcon
 }

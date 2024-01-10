@@ -6,7 +6,7 @@ const Card = ({
     ...props
 }) => {
   return (
-    <div className={cn('p-5 rounded-lg shadow-[0px_2px_6px_0px_rgba(26,24,30,0.04)] flex flex-col gap-4',className)} {...props}>
+    <div className={cn('p-5 rounded-lg shadow-[0px_2px_6px_0px_rgba(26,24,30,0.04)] flex flex-col gap-4 bg-black-100',className)} {...props}>
         {children}
     </div>
   )

@@ -69,7 +69,7 @@ const Sidebar = () => {
     },
   ];
   return (
-    <div className="w-[224px] flex flex-col px-2.5 py-4 bg-secondary justify-between">
+    <div className="w-[224px] flex flex-col px-2.5 py-4 bg-secondary justify-between hidden sm:block">
       {/* Profile and Menu Section */}
       <div>
         <div className="flex justify-between items-center mb-6 px-2">

@@ -9,7 +9,7 @@ const inputVariants = cva("w-full px-4 py-2.5 block", {
     },
     inputSize: {
       lg: "rounded rounded-1.5",
-      sm: "rounded",
+      sm: "rounded h-[40px]",
     },
   },
   defaultVariants: {
@@ -33,7 +33,7 @@ const Input = ({ variant, inputSize, className, leadingIcon, ...props }) => {
             inputSize,
             className,
           }),
-          leadingIcon && 'ps-10'
+          leadingIcon && inputSize==='lg' ? 'ps-10' :'ps-8'
         )}
         {...props}
       />

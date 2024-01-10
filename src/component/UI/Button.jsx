@@ -1,8 +1,8 @@
 import React from 'react'
 import { cva } from 'class-variance-authority'
 import { cn } from '../../utils'
-const buttonVariant  = cva(
-    'w-full rounded flex text-black-30 text-[16px] items-center',
+export const buttonVariant  = cva(
+    'w-full rounded flex text-black-30 text-[16px] items-center justify-center',
     {
         variants:{
             variant:{
@@ -24,14 +24,16 @@ const Button = ({
     variant,
     className,
     trailingIcon,
+    leadingIcon,
     children,
     ...props
 }) => {
   return (
     <button
-        className={cn(buttonVariant({ variant, size, className }))}
+        className={cn(buttonVariant({ variant, size, className,}),!trailingIcon && 'gap-0 justify-center')}
         {...props}
       >
+        {leadingIcon && <img src={leadingIcon} alt='leading-icon'/>}
        <span>{children}</span>
         {trailingIcon && <img src={trailingIcon} alt='tariling-icon'/>}
       </button>
