@@ -17,6 +17,7 @@ import questionIcon from "./quesion.svg";
 import searchIcon from "./search.svg";
 import arrowFillIcon from "./arrowfill.svg";
 import messageIcon from "./message.svg";
+import arrow2dark from "./arrow2dark.svg"
 
 export {
     analyticsIcon,
@@ -37,5 +38,6 @@ export {
     questionIcon,
     searchIcon,
     messageIcon,
-    arrowFillIcon
+    arrowFillIcon,
+    arrow2dark
 }
