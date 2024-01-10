@@ -92,7 +92,7 @@ const Sidebar = () => {
         </div>
       </div>
       {/* Wallet Section */}
-      <div className="flex gap-3 px-3 py-1.5 bg-secondary2 rounded">
+      <div className="flex gap-3 px-3 py-1.5 bg-secondary2 rounded items-center">
           <div className="bg-black-100/[0.1] rounded p-1.5">
             <img src={walletIcon} alt="wallet-icon"/>
           </div>
