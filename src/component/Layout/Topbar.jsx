@@ -15,7 +15,7 @@ const Topbar = () => {
           </div>
         </div>
       </div>
-      <div className='hidden sm:block max-w-[200px] sm:w-[400px]'>
+      <div className='hidden sm:block sm:w-[400px]'>
         <Input variant={'primary'} inputSize={'lg'} leadingIcon={searchIcon} placeholder='Search features, tutorials, etc.'/>
       </div>
       <div className='flex gap-3'>
