@@ -17,10 +17,8 @@ const Pagination = ({ isActive }) => {
         <PaginationItem isActive={true}>3</PaginationItem>
         <PaginationItem>4</PaginationItem>
           <PaginationEllipsis />
-       
         <PaginationItem>11</PaginationItem>
           <PaginationNext/>
-          
       </PaginationContent>
     </PagitnationRoot>
   );

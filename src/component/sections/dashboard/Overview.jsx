@@ -10,7 +10,7 @@ const Overview = () => {
             <h1 className="text-[20px] text-black-12 font-medium">Overview</h1>
             <Button trailingIcon={arrow2dark} className="w-[137px] h-[36px]">Last Month</Button>
         </div>
-        <div className='grid grid-cols-2 gap-[20px]'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 gap-[20px]'>
           <PaymentCard label="Online orders" amount={231}/>
           <PaymentCard label={"Amount recieved"} amount={2392312.19} type={'currency'}/>
         </div>

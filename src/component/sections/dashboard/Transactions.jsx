@@ -86,11 +86,13 @@ const Transactions = () => {
             />
             <div className="flex gap-3">
               <Button
-                trailingIcon={sortIcon}
                 size={"sm"}
-                className="w-[79px] h-[36px]"
+                className="w-[36px] h-[36px] sm:w-[79px] sm:h-[36px] p-2"
               >
-                Sort
+                <div className="flex gap-[7px]">
+                <img src={sortIcon} alt="sort-icon" />
+                <p className="hidden sm:block">Sort</p>
+                </div>
               </Button>
               <Button size={"sm"} className={"p-2 w-[36px] h-[36px]"}>
                 <img src={downloadIcon} alt="sort-icon" />

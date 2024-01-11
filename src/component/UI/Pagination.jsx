@@ -27,7 +27,7 @@ const PaginationPrevious = ({
   className,
   ...props
 }) => (
-    <Button variant={'outlined'} size={'lg'} leadingIcon={leftArrowIcon} cla>Previous</Button>
+    <Button variant={'outlined'} size={'lg'} leadingIcon={leftArrowIcon}><p className="hidden sm:block">Previous</p></Button>
 )
 
  
@@ -35,7 +35,7 @@ const PaginationNext = ({
   className,
   ...props
 }) => (
-  <Button variant={'outlined'} size={'lg'} trailingIcon={rightArrowIcon}>Next</Button>
+  <Button variant={'outlined'} size={'lg'} trailingIcon={rightArrowIcon}><p className="hidden sm:block">Next</p></Button>
 )
  
 const PaginationEllipsis = ({

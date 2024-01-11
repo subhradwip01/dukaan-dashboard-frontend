@@ -34,7 +34,7 @@ const Button = ({
         {...props}
       >
         {leadingIcon && <img src={leadingIcon} alt='leading-icon'/>}
-       <span>{children}</span>
+        <span>{children}</span>
         {trailingIcon && <img src={trailingIcon} alt='tariling-icon'/>}
       </button>
   )

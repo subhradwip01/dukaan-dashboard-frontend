@@ -3,7 +3,7 @@ import * as React from "react"
 import { cn } from "../../utils"
 
 const Table = ({ className, ...props }) => (
-  <div className="relative w-full overflow-x-auto">
+  <div className="relative w-full overflow-auto text-nowrap">
     <table
       className={cn("w-full text-sm", className)}
       {...props}
@@ -27,7 +27,7 @@ const TableBody = ({ className, ...props }) => (
 const TableRow = ({ className, ...props }) => (
   <tr
     className={cn(
-      "border-b borer-black-30 rounded grid grid-cols-4",
+      "border-b borer-black-30",
       className
     )}
     {...props}
@@ -38,7 +38,7 @@ const TableRow = ({ className, ...props }) => (
 const TableHead = ({ className, ...props }) => (
   <th
     className={cn(
-      "text-left text-black-12 font-medium px-3 py-[10px]",
+      "text-left align-middle font-medium text-black-12 font-medium px-3 py-[10px]",
       className
     )}
     {...props}
@@ -49,7 +49,7 @@ const TableHead = ({ className, ...props }) => (
 const TableCell = ({ className, ...props }) => (
   <td
     className={cn(
-      "text-left text-black-12 text-[14px] px-3 py-[10px]",
+      "align-middle text-black-12 text-[14px] px-3 py-[10px]",
       className
     )}
     {...props}

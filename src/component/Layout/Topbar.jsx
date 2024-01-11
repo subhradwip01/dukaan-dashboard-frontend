@@ -9,10 +9,13 @@ const Topbar = () => {
         <p className="text-[15px] text-black-12">Payments</p>
         <div className='flex gap-1.5 items-center'>
           <img src={questionIcon} alt='question-icon'/>
-          <p className='text-[12px] text-black-30'>How it works</p>
+          <p className='hidden sm:block text-[12px] text-black-30'>How it works</p>
+          <div className='rounded-full bg-black-95 p-2 block sm:hidden'>
+            <img src={searchIcon}  alt=''/>
+          </div>
         </div>
       </div>
-      <div className='w-[200px] sm:w-[400px]'>
+      <div className='hidden sm:block max-w-[200px] sm:w-[400px]'>
         <Input variant={'primary'} inputSize={'lg'} leadingIcon={searchIcon} placeholder='Search features, tutorials, etc.'/>
       </div>
       <div className='flex gap-3'>
