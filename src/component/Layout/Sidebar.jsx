@@ -82,11 +82,11 @@ const Sidebar = () => {
           </div>
           <img src={arrow2Icon} alt="dropdownIcon"/>
         </div>
-        <div>
+        <div className="space-y-1">
           {SIDE_MENU.map(menuItem=>(
-            <div className={`flex gap-3 px-4 py-2 ${menuItem.isActive && 'bg-black-100/[0.1] rounded'}`}>
+            <div className={`flex gap-3 px-4 py-2 hover:bg-black-100/[0.1] hover:rounded cursor-pointer ${menuItem.isActive && 'bg-black-100/[0.1] rounded'}`}>
               <img src={menuItem.icon} alt="menu-icon"/>
-              <p className="text-black-100">{menuItem.label}</p>
+              <p className="text-black-100 text-[14px] font-medium">{menuItem.label}</p>
             </div>
           ))}
         </div>
