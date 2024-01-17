@@ -13,9 +13,9 @@ import {
   themeIcon,
   truckIcon,
   arrow2Icon,
-  walletIcon
+  walletIcon,
 } from "../../assets/icon";
-import profilePic from "../../assets/img/profilePic.png"
+import profilePic from "../../assets/img/profilePic.png";
 const Sidebar = () => {
   const SIDE_MENU = [
     {
@@ -69,37 +69,53 @@ const Sidebar = () => {
     },
   ];
   return (
-    <div className="min-w-[224px] flex flex-col px-2.5 py-4 bg-secondary justify-between hidden sm:flex h-screen">
+    <div className="min-w-[224px] flex-col px-2.5 py-4 bg-secondary justify-between hidden sm:flex h-screen">
       {/* Profile and Menu Section */}
       <div>
         <div className="flex justify-between items-center mb-6 px-2">
           <div className="flex gap-3">
-            <img src={profilePic} alt="profile" className="w-[39px] h-[39px] rounded"/>
+            <img
+              src={profilePic}
+              alt="profile"
+              className="w-[39px] h-[39px] rounded"
+            />
             <div className="flex flex-col">
               <p className="text-[15px] text-black-100">Nishyan</p>
-              <p className="underline decoration-current text-[13px] text-black-100/[0.8]">Visit Store</p>
+              <p className="underline decoration-current text-[13px] text-black-100/[0.8]">
+                Visit Store
+              </p>
             </div>
           </div>
-          <img src={arrow2Icon} alt="dropdownIcon"/>
+          <img src={arrow2Icon} alt="dropdownIcon" />
         </div>
         <div className="space-y-1">
-          {SIDE_MENU.map(menuItem=>(
-            <div className={`flex gap-3 px-4 py-2 hover:bg-black-100/[0.1] hover:rounded cursor-pointer ${menuItem.isActive && 'bg-black-100/[0.1] rounded'}`}>
-              <img src={menuItem.icon} alt="menu-icon"/>
-              <p className="text-black-100 text-[14px] font-medium">{menuItem.label}</p>
+          {SIDE_MENU.map((menuItem) => (
+            <div
+              className={`flex gap-3 px-4 py-2 hover:bg-black-100/[0.1] hover:rounded cursor-pointer ${
+                menuItem.isActive && "bg-black-100/[0.1] rounded"
+              }`}
+            >
+              <img src={menuItem.icon} alt="menu-icon" />
+              <p
+                className={`${
+                  menuItem.isActive ? "text-black-100" : "text-black-100/[0.8]"
+                } text-[14px] font-medium`}
+              >
+                {menuItem.label}
+              </p>
             </div>
           ))}
         </div>
       </div>
       {/* Wallet Section */}
       <div className="flex gap-3 px-3 py-1.5 bg-secondary2 rounded items-center">
-          <div className="bg-black-100/[0.1] rounded p-1.5">
-            <img src={walletIcon} alt="wallet-icon"/>
-          </div>
-          <div className="flex flex-col">
-              <p className="text-[13px] text-black-100/[0.8]">Available Credits</p>
-              <p className="text-[16px] text-black-100">220.10</p>
-          </div>
+        <div className="bg-black-100/[0.1] rounded p-1.5">
+          <img src={walletIcon} alt="wallet-icon" />
+        </div>
+        <div className="flex flex-col">
+          <p className="text-[13px] text-black-100/[0.8]">Available Credits</p>
+          <p className="text-[16px] text-black-100">220.10</p>
+        </div>
       </div>
     </div>
   );
